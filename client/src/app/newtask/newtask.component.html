@@ -1,0 +1,74 @@
+<html>
+  <body>
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1> {{title}}
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+            <div class="row">
+                <form #addForm="ngForm" (ngSubmit)="addTask()">
+                    Title <input type="text" name="title" [(ngModel)]="task.title"> <br><br>
+                    Description <input type="text" name="desc" [(ngModel)]="task.desc"> <br><br>
+                    Due Date <input type="text" name="due" [(ngModel)]="task.due"> <br><br>
+                    <input type="submit" class="btn btn-primary" value="Add" />
+                </form>
+            </div>
+            <hr>
+          <!-- /stories -->
+        
+          
+
+          <a routerLink="/" class="btn btn-primary pull-right btnNext" class="float-right">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+</body>
+</html>
